@@ -246,10 +246,10 @@ def save():
         g_send_date = send_date.get()
         csvData = [[g_cus_no,g_cus_name_TH,g_cus_name_EN,g_email,g_tel,g_add_no,g_add_soi,g_add_tom,g_add_amp,g_add_rd,g_add_city,g_add_Pos_code,g_cer_no,g_branch,g_spec,g_damaged,g_note,g_send_date]]
         ##csvData = [s]
-        with open("b.csv",'r') as f:
+        with open("data.csv",'r') as f:
             r = reader(f)
             lines = list(r)
-        with open("b.csv",'w') as f:
+        with open("data.csv",'w') as f:
             w = writer(f,lineterminator='\n')
             w.writerows(lines)
             w.writerows(csvData) 
